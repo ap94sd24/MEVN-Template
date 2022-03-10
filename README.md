@@ -4,7 +4,7 @@ An app that render appointment data for the day for physicians
 
 ## Tech framework used
 
-MERN (MongoDB, Express, Vue 3, NodeJS)
+MEVN (MongoDB, Express, Vue 3, NodeJS)
 
 ## Installation
 
