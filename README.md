@@ -1,6 +1,6 @@
-## Physician Appointments App
+## MEVN Starter App
 
-An app that render appointment data for the day for physicians
+A template for getting started with MEVN stack application.
 
 ## Tech framework used
 

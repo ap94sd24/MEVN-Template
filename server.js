@@ -3,7 +3,8 @@ const connectDB = require("./config/db");
 const app = express();
 
 // Connect cloud database
-connectDB();
+//TODO: Uncomment this to call MongoDB
+// connectDB();
 app.use(express.json({ extended: false }));
 
 app.get("/", (req, res) => {

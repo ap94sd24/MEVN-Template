@@ -9,5 +9,7 @@ export default {
   methods: {},
 };
 </script>
-<template></template>
+<template>
+  <h1>Hello there!</h1>
+</template>
 <style scoped></style>
