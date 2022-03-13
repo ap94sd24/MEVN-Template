@@ -1,15 +1,13 @@
 <script>
-//import { RouterLink, RouterView } from "vue-router";
-import MainView from "./components/MainView.vue";
-import axios from "axios";
+import TestView from "./components/Test.vue";
 
 export default {
   components: {
-    MainView,
+    TestView,
   },
 };
 </script>
 
 <template>
-  <main-view />
+  <test-view />
 </template>

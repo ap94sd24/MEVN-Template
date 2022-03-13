@@ -1,15 +1,15 @@
 const express = require("express");
 const router = express.Router();
-const Physician = require("../../models/Physician");
+const Test = require("../../models/Test");
 
 router.post("/", async (req, res) => {
   try {
-    const newPhysician = new Physician({
+    const newTest = new Test({
       name: req.body.name,
-      email: req.body.email,
+      date: req.body.date,
     });
 
-    const data = await newPhysician.save();
+    const data = await newTest.save();
 
     res.json(data);
   } catch (error) {
@@ -20,9 +20,9 @@ router.post("/", async (req, res) => {
 
 router.get("/", async (req, res) => {
   try {
-    const physicians = await Physician.find();
+    const tests = await Test.find();
 
-    res.json(physicians);
+    res.json(tests);
   } catch (error) {
     console.error(err.message);
     res.status(500).send("Server error!");

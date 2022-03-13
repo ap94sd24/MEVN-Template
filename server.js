@@ -11,8 +11,7 @@ app.get("/", (req, res) => {
 });
 
 //Define routes here
-app.use("/api/physicians", require("./routes/api/physicians"));
-app.use("/api/appointments", require("./routes/api/appointments"));
+app.use("/api/tests", require("./routes/api/tests"));
 const PORT = process.env.PORT || 5001;
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
